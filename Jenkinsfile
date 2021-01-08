@@ -13,6 +13,7 @@ pipeline {
 		
 		stage ('Deploy') {
 			steps {
+					input ("This is a Message ")
 				sh '''
 						echo "This is a Deploy Stage"
 						sleep 2
